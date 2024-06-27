@@ -23,14 +23,11 @@ export default function TextExpander({
     color: showHideColor,
     cursor: "pointer",
   };
-  const wordsArray = children?.split(" ");
-  const limitedWordsArray = wordsArray.filter(
-    (_, index) => index + 1 <= wordsNum
-  );
+  const limitedWords = children?.split(" ").slice(0, wordsNum).join(" ");
 
   return (
     <div className={"container " + className}>
-      {isExpand ? wordsArray.join(" ") : limitedWordsArray.join(" ") + "... "}
+      {isExpand ? children : limitedWords + "... "}
       <span
         role="button"
         className="toggler"
