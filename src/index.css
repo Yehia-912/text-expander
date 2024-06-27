@@ -1,0 +1,17 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.toggler:hover {
+  text-decoration: underline;
+}
+.container {
+  margin: 20px;
+}
+.bordered {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 3px 3px 3px 10px;
+  background: #eee;
+}
